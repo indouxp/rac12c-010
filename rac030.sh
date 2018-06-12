@@ -5,6 +5,7 @@
 set -eu
 # From Public Yum or ULN
 yum install -y\
+            compat-libcap1\
             binutils\
             compat-libstdc++-33 \
             compat-libstdc++-33.i686 \
