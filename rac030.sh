@@ -4,41 +4,44 @@
 
 set -eu
 # From Public Yum or ULN
-yum install binutils -y
-yum install compat-libstdc++-33 -y
-yum install compat-libstdc++-33.i686 -y
-yum install gcc -y
-yum install gcc-c++ -y
-yum install glibc -y
-yum install glibc.i686 -y
-yum install glibc-devel -y
-yum install glibc-devel.i686 -y
-yum install ksh -y
-yum install libgcc -y
-yum install libgcc.i686 -y
-yum install libstdc++ -y
-yum install libstdc++.i686 -y
-yum install libstdc++-devel -y
-yum install libstdc++-devel.i686 -y
-yum install libaio -y
-yum install libaio.i686 -y
-yum install libaio-devel -y
-yum install libaio-devel.i686 -y
-yum install libXext -y
-yum install libXext.i686 -y
-yum install libXtst -y
-yum install libXtst.i686 -y
-yum install libX11 -y
-yum install libX11.i686 -y
-yum install libXau -y
-yum install libXau.i686 -y
-yum install libxcb -y
-yum install libxcb.i686 -y
-yum install libXi -y
-yum install libXi.i686 -y
-yum install make -y
-yum install sysstat -y
-yum install unixODBC -y
-yum install unixODBC-devel -y
-yum install zlib-devel -y
-yum install zlib-devel.i686 -y
+yum install -y\
+            binutils\
+            compat-libstdc++-33 \
+            compat-libstdc++-33.i686 \
+            gcc \
+            gcc-c++ \
+            glibc \
+            glibc.i686 \
+            glibc-devel \
+            glibc-devel.i686 \
+            ksh \
+            libgcc \
+            libgcc.i686 \
+            libstdc++ \
+            libstdc++.i686 \
+            libstdc++-devel \
+            libstdc++-devel.i686 \
+            libaio \
+            libaio.i686 \
+            libaio-devel \
+            libaio-devel.i686 \
+            libXext \
+            libXext.i686 \
+            libXtst \
+            libXtst.i686 \
+            libX11 \
+            libX11.i686 \
+            libXau \
+            libXau.i686 \
+            libxcb \
+            libxcb.i686 \
+            libXi \
+            libXi.i686 \
+            make \
+            sysstat \
+            unixODBC \
+            unixODBC-devel \
+            zlib-devel \
+            zlib-devel.i686 
+
+date '+%Y%m%d.%H%M%S' >> ${0##*/}.done

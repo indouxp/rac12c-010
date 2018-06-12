@@ -20,3 +20,5 @@ cat <<EOT >> ${TARGET:?}
 #192.168.0.178   c7scan.tsystem.gr.jp c7-scan
 #192.168.0.179   c7scan.tsystem.gr.jp c7-scan
 EOT
+
+date '+%Y%m%d.%H%M%S' >> ${0##*/}.done

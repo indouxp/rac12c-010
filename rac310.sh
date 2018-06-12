@@ -26,3 +26,9 @@ mkswap /SWAPFILE
 swapon /SWAPFILE
 
 SIZE
+
+cat <<EOT >> /etc/fstab
+/SWAPFILE                     swap                    swap    defaults        0 0
+EOT
+
+date '+%Y%m%d.%H%M%S' >> ${0##*/}.done

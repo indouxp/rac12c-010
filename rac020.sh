@@ -15,3 +15,5 @@ oracle   hard   stack    32768
 oracle   hard   memlock    134217728
 oracle   soft   memlock    134217728
 EOT
+
+date '+%Y%m%d.%H%M%S' >> ${0##*/}.done

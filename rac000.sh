@@ -4,9 +4,9 @@
 
 set -eu
 
-mkdir -p /u01/app/12.2.0.1/grid
-mkdir -p /u01/app/oracle/product/12.2.0.1/db_1
-chown -R oracle:oinstall /u01
-chmod -R 775 /u01/
+systemctl disable NetworkManager
+systemctl stop NetworkManager
+
+systemctl status network
 
 date '+%Y%m%d.%H%M%S' >> ${0##*/}.done

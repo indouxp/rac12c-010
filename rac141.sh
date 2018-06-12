@@ -7,3 +7,5 @@ set -eu
 /sbin/udevadm control --reload-rules
 
 /sbin/start_udev
+
+date '+%Y%m%d.%H%M%S' >> ${0##*/}.done

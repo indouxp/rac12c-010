@@ -5,3 +5,5 @@
 set -eu
 
 passwd oracle
+
+date '+%Y%m%d.%H%M%S' >> ${0##*/}.done

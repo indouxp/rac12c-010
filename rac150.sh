@@ -5,6 +5,8 @@
 set -eu
 
 /sbin/partprobe /dev/sdb1
-/sbin/partprobe /dev/sdc1
-/sbin/partprobe /dev/sdd1
-/sbin/partprobe /dev/sde1
+#/sbin/partprobe /dev/sdc1
+#/sbin/partprobe /dev/sdd1
+#/sbin/partprobe /dev/sde1
+
+date '+%Y%m%d.%H%M%S' >> ${0##*/}.done

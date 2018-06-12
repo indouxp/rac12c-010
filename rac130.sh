@@ -4,6 +4,8 @@
 
 set -eu
 
-usermod -G oinstall,dba,vboxsf oracle
+#usermod -G oinstall,dba,vboxsf oracle
 
 id oracle
+
+date '+%Y%m%d.%H%M%S' >> ${0##*/}.done
