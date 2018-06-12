@@ -14,5 +14,6 @@ systemctl disable firewalld
 
 systemctl enable chronyd.service
 systemctl start chronyd.service
+chronyc sources
 
 date '+%Y%m%d.%H%M%S' >> ${0##*/}.done
