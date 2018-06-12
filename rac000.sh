@@ -9,4 +9,7 @@ systemctl stop NetworkManager
 
 systemctl status network
 
+systemctl disable avahi-daemon
+systemctl stop avahi-daemon
+
 date '+%Y%m%d.%H%M%S' >> ${0##*/}.done
