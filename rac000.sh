@@ -9,6 +9,7 @@ systemctl stop NetworkManager
 
 systemctl status network
 
+# 項番順に実行すると、最小インストールの場合は、avahi-daemonはインストールされていない。
 systemctl disable avahi-daemon
 systemctl stop avahi-daemon
 
