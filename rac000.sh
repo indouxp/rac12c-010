@@ -1,11 +1,11 @@
 #!/bin/sh
 # https://oracle-base.com/articles/12c/oracle-db-12cr2-rac-installation-on-oracle-linux-7-using-virtualbox
-#
+# NetworkManagerを止めると、だめかな。20180831
 
 set -eu
 
-systemctl disable NetworkManager
-systemctl stop NetworkManager
+#systemctl disable NetworkManager
+#systemctl stop NetworkManager
 
 systemctl status network
 
